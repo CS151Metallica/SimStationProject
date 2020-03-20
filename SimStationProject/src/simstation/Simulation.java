@@ -1,3 +1,4 @@
+// Trung Le: First initialize
 package simstation;
 
 import java.util.*;

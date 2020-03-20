@@ -1,3 +1,4 @@
+// Trung Le: First initialize
 package mvc;
 
 public abstract class Model extends Bean {
