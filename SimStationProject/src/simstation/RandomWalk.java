@@ -14,7 +14,7 @@ public class RandomWalk extends Simulation {
 		// populate might create 50 drunks and add them to the agents list.
 		int drunkCount = 50;
 		for(int i = 0; i < drunkCount; i++) {
-			Drunk a = new Drunk();
+			Drunk a = new Drunk(Integer.toString(i));
 			addAgent(a);
 		}
 		
