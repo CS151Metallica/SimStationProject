@@ -1,4 +1,5 @@
 // Trung Le: First initialize
+// Amy: edit stats()
 package simstation;
 
 import java.util.*;
@@ -83,21 +84,28 @@ public class Simulation extends Model {
 	// Method suspend() when click Suspend button
 	public synchronized void suspend()
 	{
-		for(Agent a: agents)
-		{
-			a.suspend();
+		//only suspend if the agents were never stopped
+		if (!agents.get(0).isStopped()) {
+			for(Agent a: agents)
+			{
+				a.suspend();
+			}
+			stopTimer();
 		}
-		stopTimer();
 	}
 
 	// Method name: resume() when click resume button
 	public synchronized void resume()
 	{
-		startTimer();
-		for(Agent a : agents)
-		{
-			a.resume();
+		//if the agents were never stopped, resume simulation
+		if (!agents.get(0).isStopped()) {
+			startTimer();
+			for(Agent a : agents)
+			{
+				a.resume();
+			}
 		}
+		
 	}
 
 	// Method name: stop()
@@ -128,7 +136,7 @@ public class Simulation extends Model {
 	public void stats()
 	{
 		JFrame frame = new JFrame("Status");
-		JOptionPane.showMessageDialog(null, "Clicked on Stats button");
+		JOptionPane.showMessageDialog(null, "#agents = " + agents.size() + "\nclock = " + clock);
 	}
 	
 	public ArrayList<Agent> getAgents() { return agents; }
