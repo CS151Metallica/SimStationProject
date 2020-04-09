@@ -31,9 +31,9 @@ abstract class Agent implements Runnable, Serializable {
 		heading = Heading.random();
 	}
 
-	public Agent() {
-		this("Agent_ " + mvc.Utilities.getID());
-	}
+//	public Agent() {
+//		this("Agent_ " + mvc.Utilities.getID());
+//	}
 
 	public void run() {
 		thread = Thread.currentThread(); // catch my thread
@@ -108,5 +108,45 @@ abstract class Agent implements Runnable, Serializable {
 	// test
 	public synchronized boolean finished() {
 		return (state == AgentState.STOPPED) || (thread != null && thread.getState() != State.RUNNABLE);
+	}
+	
+	public synchronized void move(int steps) {
+		if (heading == Heading.N) {
+			int tempY = yc - steps;
+			if (tempY < 0) {
+				yc = 250 + tempY;
+			} else {
+				yc -= steps;
+			}
+		} else if (heading == Heading.E) {
+			int tempX = xc + steps;
+			if (tempX > 250) {
+				int difference = tempX - 250;
+				xc = difference;
+			} else {
+				xc += steps;
+			}
+		} else if (heading == Heading.S) {
+			int tempY = yc + steps;
+			if (tempY > 250) {
+				int difference = tempY - 250;
+				yc = difference;
+			} else {
+				yc += steps;
+			}
+		} else {
+			int tempX = xc - steps;
+			if (tempX < 0) {
+				xc = 250 + tempX;
+			} else {
+				xc -= steps;
+			}
+		}
+		
+		world.changed();
+	}
+	
+	public void changeHeading() {
+		heading = Heading.random();
 	}
 }	
