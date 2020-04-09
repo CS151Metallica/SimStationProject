@@ -1,6 +1,7 @@
-package simstation;
+package drunks;
 
-import mvc.Model;
+import mvc.*;
+import simstation.*;
 
 public class RandomWalkFactory extends SimStationFactory{
 	@Override

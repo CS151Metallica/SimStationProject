@@ -5,7 +5,7 @@ import java.lang.Thread.State;
 
 import mvc.*;
 
-abstract class Agent implements Runnable, Serializable {
+public abstract class Agent implements Runnable, Serializable {
 	private static final long serialVersionUID = 1L;
 	private Thread thread;
 	protected String name;

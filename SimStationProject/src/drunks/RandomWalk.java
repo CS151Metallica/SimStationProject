@@ -1,4 +1,6 @@
-package simstation;
+package drunks;
+
+import simstation.*;
 
 /*
  * In Random Walk agents are drunks. 
