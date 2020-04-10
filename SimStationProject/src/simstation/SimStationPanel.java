@@ -70,10 +70,4 @@ public class SimStationPanel extends AppPanel {
         add(buttonPanel);
         add(view); 
 	}
-
-    public static void main(String[] args) {
-        AppFactory factory = new SimStationFactory();
-        AppPanel panel = new SimStationPanel(factory);
-        panel.display();
-    }
 }
