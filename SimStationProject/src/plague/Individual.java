@@ -1,3 +1,4 @@
+//Amy
 package plague;
 
 import java.util.*;
