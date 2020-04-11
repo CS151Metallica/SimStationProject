@@ -3,7 +3,7 @@ package drunks;
 import mvc.*;
 import simstation.*;
 
-public class RandomWalkPanel extends SimStationPanel{
+public class RandomWalkPanel extends SimulationPanel{
 	
 	public RandomWalkPanel(AppFactory factory) {
 		super(factory);

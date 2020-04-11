@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import mvc.*;
 import simstation.*;
 
-public class FlockingPanel extends SimStationPanel{
+public class FlockingPanel extends SimulationPanel{
 	
 	public FlockingPanel(AppFactory factory) {
 		super(factory);		

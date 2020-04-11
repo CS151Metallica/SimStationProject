@@ -5,10 +5,10 @@ import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 
-public class SimStationPanel extends AppPanel {
+public class SimulationPanel extends AppPanel {
 	public JButton start, suspend, resume, stop, stats;
 	
-	public SimStationPanel(AppFactory factory) {
+	public SimulationPanel(AppFactory factory) {
 		super(factory);
 		
 		this.setLayout(new GridLayout(1, 2));
