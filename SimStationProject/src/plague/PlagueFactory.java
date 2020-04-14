@@ -9,4 +9,9 @@ import simstation.*;
 public class PlagueFactory extends SimStationFactory{
 	@Override
 	public Model makeModel() { return new PlagueSimulation(); }	
+	
+	public PlagueView getView(Model model)
+	{
+		return new PlagueView((Simulation)model);
+	}
 }
