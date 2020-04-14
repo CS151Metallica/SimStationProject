@@ -22,4 +22,5 @@ public class Drunk extends Agent{
 	public int getY() {
 		return yc;
 	}
+	
 }

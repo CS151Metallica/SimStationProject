@@ -1,5 +1,7 @@
 package drunks;
 
+import mvc.AppFactory;
+import mvc.AppPanel;
 import simstation.*;
 
 /*
@@ -20,5 +22,11 @@ public class RandomWalk extends Simulation {
 			addAgent(a);
 		}
 		
+	}
+	
+	public static void main(String[] args) {
+		AppFactory factory = new RandomWalkFactory();
+		AppPanel panel = new SimulationPanel(factory);
+		panel.display();
 	}
 }

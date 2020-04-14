@@ -5,6 +5,8 @@ import java.util.*;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
+import mvc.AppFactory;
+import mvc.AppPanel;
 import simstation.*;
 
 public class PrisonerDT extends Simulation{
@@ -49,6 +51,12 @@ public class PrisonerDT extends Simulation{
 			addAgent(a);
 		}
 		
+	}
+	
+	public static void main(String[] args) {
+		AppFactory factory = new PrisonerDTFactory();
+		AppPanel panel = new SimulationPanel(factory);
+		panel.display();
 	}
 	
 	@Override

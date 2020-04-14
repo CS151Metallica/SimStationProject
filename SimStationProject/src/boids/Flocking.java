@@ -1,5 +1,7 @@
 package boids;
 
+import mvc.AppFactory;
+import mvc.AppPanel;
 import simstation.*;
 
 public class Flocking extends Simulation{
@@ -10,7 +12,12 @@ public class Flocking extends Simulation{
 		for(int i = 0; i < birdCount; i++) {
 			Bird a = new Bird(Integer.toString(i));
 			addAgent(a);
-		}
-		
+		}	
+	}
+	
+	public static void main(String[] args) {
+		AppFactory factory = new FlockingFactory();
+		AppPanel panel = new SimulationPanel(factory);
+		panel.display();
 	}
 }

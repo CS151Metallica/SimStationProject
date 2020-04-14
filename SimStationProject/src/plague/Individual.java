@@ -55,4 +55,5 @@ public class Individual extends Agent{
 	public int getY() {
 		return yc;
 	}
+	
 }

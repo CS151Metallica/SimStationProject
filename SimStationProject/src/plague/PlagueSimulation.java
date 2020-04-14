@@ -58,5 +58,6 @@ public class PlagueSimulation extends Simulation{
 		  //whether an Individual gets infected is based on the VIRULENCE
 		  return Utilities.rng.nextInt(100) < VIRULENCE;
 	  }
+	  
 }
 	  
