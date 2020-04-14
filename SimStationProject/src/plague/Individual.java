@@ -1,4 +1,8 @@
-//Amy
+/*
+ * Amy, 4/10: created
+ * Amy, 4/10: added setInfected, infect, and update method
+ * Trung, 4/13: change random() to mvc.Utilties random
+ */
 package plague;
 
 import mvc.Utilities;

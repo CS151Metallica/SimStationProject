@@ -1,3 +1,10 @@
+/*
+ * Edit history:
+ * Amy, 4/10: created
+ * Amy, 4/10: added populate, percentInfected, stats, and infect method
+ * Trung, 4/13: change random() to mvc.Utilties random
+ * Amy, 4/13: removed constructor and unnecessary plagueRandom static variable
+ */
 package plague;
 
 import java.awt.*;
@@ -18,12 +25,6 @@ public class PlagueSimulation extends Simulation{
 	  
 	  public static double POPULATION = 50;
 	  
-	  public static int plagueRandom; //is used to help determine whether an Individual become infected
-	  
-	  public PlagueSimulation() {
-		  plagueRandom = Utilities.rng.nextInt();
-	  }
-	  
 	  @Override
 	  public void populate() {
 		  // populate might create 50 Individual and add them to the agents list.
@@ -33,7 +34,7 @@ public class PlagueSimulation extends Simulation{
 		  }
 	  }
 	  
-	  //calculate how the percentage of Individual affected in the population
+	  //calculate the percentage of Individual infected in the population
 	  public double percentInfected() {
 		  int count = 0;
 		  ArrayList<Agent> list = getAgents();
