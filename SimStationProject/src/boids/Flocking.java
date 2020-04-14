@@ -1,7 +1,7 @@
 /*
- * Trung: First add Flocking.java
- * Amy: add population()
- * Trung: Add main()
+ * 04/09: Trung: First add Flocking.java
+ * 04/09: Amy: add population()
+ * 04/13: Trung: Add main()
  */
 package boids;
 

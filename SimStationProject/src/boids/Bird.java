@@ -1,9 +1,9 @@
 /*
- * Trung: First add Bird.java
- * Trung: add constructor method
- * Amy: add update()
- * Amy: add getSpeed()
- * Trung: Remove getX() and getY()
+ * 04/09: Trung: First add Bird.java
+ *        Trung: add constructor method
+ * 04/09: Amy: add update()
+ *        Amy: add getSpeed()
+ * 04/13: Trung: Remove getX() and getY()
  */
 package boids;
 

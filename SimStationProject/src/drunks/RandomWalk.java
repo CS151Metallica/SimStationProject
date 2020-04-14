@@ -1,7 +1,7 @@
 /*
- * Trung: First add RandomWalk.java
- * Amy: add populate();
- * Trung: add main()
+ * 04/07: Trung: First add RandomWalk.java
+ * 04/07: Amy: add populate();
+ * 04/13: Trung: add main()
  */
 package drunks;
 

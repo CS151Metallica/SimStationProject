@@ -1,6 +1,6 @@
 /*
- * Amy, 4/13: created
- * Trung, 4/13: added main function
+ * 04/13: Amy: created
+ * 04/13: Trung: added main function
  */
 package prisoners;
 

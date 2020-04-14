@@ -1,5 +1,5 @@
 /*
- * Amy, 4/10: created
+ * 04/10: Amy: First created
  */
 package plague;
 

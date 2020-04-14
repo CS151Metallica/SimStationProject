@@ -1,5 +1,5 @@
 /*
- * Trung: add FlockingFactory.java
+ * 04/09: Trung: add FlockingFactory.java
  */
 package boids;
 

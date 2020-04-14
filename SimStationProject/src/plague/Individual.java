@@ -1,6 +1,6 @@
 /*
- * Amy, 4/10: created
- * Trung, 4/13: change random() to mvc.Utilties random
+ * 04/10: Amy: created
+ * 04/13: Trung: change random() to mvc.Utilties random
  */
 package plague;
 

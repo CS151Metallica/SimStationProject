@@ -1,5 +1,5 @@
 /*
- * Trung: Add RandomWalkFactory.java
+ * 04/07: Trung: Add RandomWalkFactory.java
  */
 package drunks;
 

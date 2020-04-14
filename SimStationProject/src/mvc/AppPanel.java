@@ -1,6 +1,6 @@
 /*
- *  Trung Le: First initialize
- *  Amy: modify FRAME_WIDTH, FRAME_HEIGHT
+ *  04/07: Trung Le: First initialize
+ *  04/07: Amy: modify FRAME_WIDTH, FRAME_HEIGHT
  */
 package mvc;
 

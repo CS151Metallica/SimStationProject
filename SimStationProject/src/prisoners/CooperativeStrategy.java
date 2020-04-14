@@ -1,5 +1,5 @@
 /*
- * Amy, 4/13: created
+ * 04/13: Amy: First created
  */
 package prisoners;
 

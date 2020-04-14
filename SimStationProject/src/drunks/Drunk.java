@@ -1,8 +1,8 @@
 /*
- * Trung: First add Flocking.java
- * Amy: add constructor method
- * Amy: add update()
- * Trung: Remove getX() and getY()
+ * 04/07: Trung: First add Flocking.java
+ * 04/07: Trung: add constructor method
+ * 04/08: Amy: add update()
+ * 04/14: Amy: Remove getX() and getY()
  */
 package drunks;
 

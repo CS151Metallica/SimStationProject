@@ -1,9 +1,8 @@
 /*
- * Edit history:
- * Amy, 4/10: created
- * Amy, 4/10: added populate, percentInfected, stats, and infect method
- * Trung, 4/13: change random() to mvc.Utilties random
- * Amy, 4/13: removed constructor and unnecessary plagueRandom static variable
+ * 04/10: Amy: First created
+ * 04/10: Amy: added populate, percentInfected, stats, and infect method
+ * 04/13: Trung: change random() to mvc.Utilties random
+ * 04/13: Amy: removed constructor and unnecessary plagueRandom static variable
  */
 package plague;
 

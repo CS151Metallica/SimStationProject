@@ -1,5 +1,6 @@
 /*
- * Amy, 4/13: created
+ * 04/13: Amy: First created
+ * 04/13: Trung: Change Random to Utilities random
  */
 package prisoners;
 
