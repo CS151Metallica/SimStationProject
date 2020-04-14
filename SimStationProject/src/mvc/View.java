@@ -1,4 +1,6 @@
-// Trung Le: First initialize
+/*
+ *  Amy: First initialize
+ */
 package mvc;
 
 import java.beans.PropertyChangeEvent;
@@ -37,6 +39,4 @@ public class View extends JComponent implements PropertyChangeListener{
 	public void propertyChange(PropertyChangeEvent evt) {
 		repaint();
 	}
-
-	
 }

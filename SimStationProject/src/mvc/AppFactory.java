@@ -1,4 +1,6 @@
-// Trung Le: First initialize
+/*
+ *  Amy: First initialize
+ */
 package mvc;
 
 public interface AppFactory {

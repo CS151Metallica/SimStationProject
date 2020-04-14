@@ -1,3 +1,9 @@
+/*
+ * Trung: First add Flocking.java
+ * Amy: add constructor method
+ * Amy: add update()
+ * Trung: Remove getX() and getY()
+ */
 package drunks;
 
 import simstation.*;
@@ -14,13 +20,4 @@ public class Drunk extends Agent{
 		changeHeading();
 		move(Utilities.rng.nextInt(10));
 	}
-	
-	public int getX() {
-		return xc;
-	}
-	
-	public int getY() {
-		return yc;
-	}
-	
 }

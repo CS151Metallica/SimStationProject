@@ -2,7 +2,7 @@ package simstation;
 
 import mvc.*;
 
-public class SimStationFactory implements AppFactory {
+public class SimStationFactory implements SimFactory {
 
     public Model makeModel() { return new Simulation(); }
 
@@ -33,4 +33,9 @@ public class SimStationFactory implements AppFactory {
     public String about() {
         return "SimStation v1.0 created by Metallica team";
     }
+
+	@Override
+	public View getView(Model model) {
+		return new SimulationView((Simulation)model);
+	}
 }

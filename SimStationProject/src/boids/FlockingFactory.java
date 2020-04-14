@@ -1,3 +1,6 @@
+/*
+ * Trung: add FlockingFactory.java
+ */
 package boids;
 
 import mvc.*;

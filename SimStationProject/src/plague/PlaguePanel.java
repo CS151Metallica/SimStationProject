@@ -1,3 +1,6 @@
+/*
+ * Amy, 4/10: created
+ */
 package plague;
 
 import java.awt.*;
