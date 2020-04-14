@@ -1,11 +1,5 @@
 package boids;
 
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
-
-import javax.swing.JButton;
-import javax.swing.JPanel;
-
 import mvc.*;
 import simstation.*;
 

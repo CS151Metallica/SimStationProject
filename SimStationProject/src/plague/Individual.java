@@ -1,28 +1,23 @@
 //Amy
 package plague;
 
-import java.util.*;
-
+import mvc.Utilities;
 import simstation.*;
 
 public class Individual extends Agent{
 
 	private boolean infected;
-	
-	private Random randomSteps;
-	
+		
 	public Individual(String name) {
 		super(name);
 		
 		//some Individual might be infected at the beginning
 		setInfected();
-		
-		randomSteps = new Random();
 	}
 	
 	//determines whether the individual is infected at the beginning
 	private void setInfected() {
-		infected = PlagueSimulation.plagueRandom.nextInt(50) < 5;
+		infected = Utilities.rng.nextInt(50) < 5;
 	}
 	
 	public void infect() {
@@ -47,15 +42,10 @@ public class Individual extends Agent{
 			if(other.isInfected()) {
 				this.infect();
 			}
-			
-//			//if this Individual is infected, their neighbor has a chance of getting infected
-//			if(infected) {
-//				other.infect();
-//			}
 		}
 		
 		changeHeading();
-		move(randomSteps.nextInt(7));		
+		move(Utilities.rng.nextInt(7));		
 	}
 	
 	public int getX() {

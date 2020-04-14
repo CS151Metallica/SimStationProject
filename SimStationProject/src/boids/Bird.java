@@ -1,20 +1,15 @@
 package boids;
 
-import java.util.*;
-
+import mvc.Utilities;
 import simstation.*;
 
 public class Bird extends Agent{
 
 	private int speed;
-	public static Random speedGen = new Random();
-	
-	private int radius = 10;
-	
 	
 	public Bird(String name) {
 		super(name);
-		speed = speedGen.nextInt(9) + 1;
+		speed = Utilities.rng.nextInt(9) + 1;
 	}
 	
 	public int getSpeed() {
@@ -24,10 +19,6 @@ public class Bird extends Agent{
 	@Override
 	public void update() {
 		int clock = world.getClock();
-//		if (clock > 0 && clock % 100 == 0) {
-//			radius += 10;
-//			System.out.println(radius);
-//		}
 	
 		Agent neighbor = world.getNeighbor(this, 25);
 		

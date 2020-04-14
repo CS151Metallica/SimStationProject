@@ -6,6 +6,7 @@ import java.util.*;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
+import mvc.Utilities;
 import simstation.*;
 
 public class PlagueSimulation extends Simulation{
@@ -17,10 +18,10 @@ public class PlagueSimulation extends Simulation{
 	  
 	  public static double POPULATION = 50;
 	  
-	  public static Random plagueRandom; //is used to help determine whether an Individual become infected
+	  public static int plagueRandom; //is used to help determine whether an Individual become infected
 	  
 	  public PlagueSimulation() {
-		  plagueRandom = new Random();
+		  plagueRandom = Utilities.rng.nextInt();
 	  }
 	  
 	  @Override
@@ -55,7 +56,7 @@ public class PlagueSimulation extends Simulation{
 	  
 	  public static boolean infect() {
 		  //whether an Individual gets infected is based on the VIRULENCE
-		  return plagueRandom.nextInt(100) < VIRULENCE;
+		  return Utilities.rng.nextInt(100) < VIRULENCE;
 	  }
 }
 	  

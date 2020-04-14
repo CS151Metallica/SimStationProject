@@ -31,10 +31,6 @@ public abstract class Agent implements Runnable, Serializable {
 		heading = Heading.random();
 	}
 
-//	public Agent() {
-//		this("Agent_ " + mvc.Utilities.getID());
-//	}
-
 	public void run() {
 		thread = Thread.currentThread(); // catch my thread
 		while(!isStopped()) {

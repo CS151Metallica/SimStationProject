@@ -1,23 +1,18 @@
 package drunks;
 
 import simstation.*;
-import java.util.*;
-
-import simstation.*;
+import mvc.Utilities;
 
 public class Drunk extends Agent{
-	private Random randomWalk;
 	
 	public Drunk(String name) {
 		super(name);
-		
-		randomWalk = new Random();
 	}
 	
 	@Override
 	public void update() {
 		changeHeading();
-		move(randomWalk.nextInt(10));
+		move(Utilities.rng.nextInt(10));
 	}
 	
 	public int getX() {
