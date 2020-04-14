@@ -1,3 +1,8 @@
+/*
+ * Trung: First add RandomWalk.java
+ * Amy: add populate();
+ * Trung: add main()
+ */
 package drunks;
 
 import mvc.AppFactory;

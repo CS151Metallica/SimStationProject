@@ -1,3 +1,8 @@
+/*
+ * Trung: First add Flocking.java
+ * Amy: add population()
+ * Trung: Add main()
+ */
 package boids;
 
 import mvc.AppFactory;

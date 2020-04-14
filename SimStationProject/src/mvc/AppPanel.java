@@ -1,4 +1,7 @@
-// Trung Le: First initialize
+/*
+ *  Trung Le: First initialize
+ *  Amy: modify FRAME_WIDTH, FRAME_HEIGHT
+ */
 package mvc;
 
 import java.awt.*;

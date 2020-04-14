@@ -1,3 +1,6 @@
+/*
+ * Trung: Add RandomWalkFactory.java
+ */
 package drunks;
 
 import mvc.*;

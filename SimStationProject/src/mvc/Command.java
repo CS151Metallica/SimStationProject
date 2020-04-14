@@ -1,4 +1,6 @@
-// Trung Le: First initialize
+/*
+ *  Trung Le: First initialize
+ */
 package mvc;
 
 public abstract class Command {

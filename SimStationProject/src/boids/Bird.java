@@ -1,3 +1,10 @@
+/*
+ * Trung: First add Bird.java
+ * Trung: add constructor method
+ * Amy: add update()
+ * Amy: add getSpeed()
+ * Trung: Remove getX() and getY()
+ */
 package boids;
 
 import mvc.Utilities;
@@ -31,13 +38,4 @@ public class Bird extends Agent{
 		
 		move(speed);
 	}
-	
-	public int getX() {
-		return xc;
-	}
-	
-	public int getY() {
-		return yc;
-	}
-
 }
