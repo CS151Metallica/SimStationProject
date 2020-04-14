@@ -145,4 +145,12 @@ public abstract class Agent implements Runnable, Serializable {
 	public void changeHeading() {
 		heading = Heading.random();
 	}
+	
+	public int getX() {
+		return xc;
+	}
+	
+	public int getY() {
+		return yc;
+	}
 }	
