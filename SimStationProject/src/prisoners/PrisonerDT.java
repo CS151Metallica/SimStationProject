@@ -1,3 +1,7 @@
+/*
+ * Amy, 4/13: created
+ * Trung, 4/13: added main function
+ */
 package prisoners;
 
 import java.util.*;

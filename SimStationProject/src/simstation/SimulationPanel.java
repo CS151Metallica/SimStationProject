@@ -1,3 +1,6 @@
+/*
+ * Trung, 4/9: created
+ */
 package simstation;
 
 import mvc.*;

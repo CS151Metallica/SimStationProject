@@ -1,3 +1,7 @@
+/*
+ * Trung, 4/7: created
+ * Amy, 4/8: added move method
+ */
 package simstation;
 
 import java.io.Serializable;

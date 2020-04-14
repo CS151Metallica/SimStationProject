@@ -1,5 +1,6 @@
-// Trung Le: First initialize
-// Amy: edit stats()
+/*
+ *  Trung Le, 3/19: created
+ */
 package simstation;
 
 import java.util.*;

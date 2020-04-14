@@ -1,6 +1,8 @@
+/*
+ * Amy, 4/13: created
+ */
 package prisoners;
 
-import java.util.Random;
 import mvc.Utilities;
 
 public class RandomStrategy extends Strategy{

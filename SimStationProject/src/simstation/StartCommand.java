@@ -1,3 +1,6 @@
+/*
+ * Amy, 4/8: created
+ */
 package simstation;
 
 import mvc.*;

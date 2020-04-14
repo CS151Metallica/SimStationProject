@@ -1,5 +1,5 @@
 /*
- * Trung: Add SimFactory.java
+ * Trung, 4/14: created
  */
 package simstation;
 

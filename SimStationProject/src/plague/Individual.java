@@ -1,6 +1,5 @@
 /*
  * Amy, 4/10: created
- * Amy, 4/10: added setInfected, infect, and update method
  * Trung, 4/13: change random() to mvc.Utilties random
  */
 package plague;
@@ -21,7 +20,7 @@ public class Individual extends Agent{
 	
 	//determines whether the individual is infected at the beginning
 	private void setInfected() {
-		infected = Utilities.rng.nextInt(50) < 5;
+		infected = Utilities.rng.nextInt(50) < 7;
 	}
 	
 	public void infect() {
@@ -51,13 +50,4 @@ public class Individual extends Agent{
 		changeHeading();
 		move(Utilities.rng.nextInt(7));		
 	}
-	
-	public int getX() {
-		return xc;
-	}
-	
-	public int getY() {
-		return yc;
-	}
-	
 }
