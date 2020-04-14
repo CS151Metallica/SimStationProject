@@ -1,3 +1,6 @@
+/*
+ * Trung: Add SimFactory.java
+ */
 package simstation;
 
 import mvc.*;
