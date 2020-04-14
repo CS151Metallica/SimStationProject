@@ -52,7 +52,6 @@ public class Prisoner extends Agent{
 				neighbor.addScore(PrisonerDT.CHEAT);
 			}
 			
-			//System.out.println("GAME\n" + name + " " + fitnessScore + " " + strategy.getStrategyType() + " " + cooperation + "\n" + neighbor.getName() + " " + neighbor.getScore() + " " + neighbor.getStrategyType() + " " + neighborCooperation + "\n" );
 		}
 		
 		changeHeading();

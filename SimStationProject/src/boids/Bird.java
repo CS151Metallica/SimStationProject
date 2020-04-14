@@ -17,9 +17,7 @@ public class Bird extends Agent{
 	}
 
 	@Override
-	public void update() {
-		int clock = world.getClock();
-	
+	public void update() {	
 		Agent neighbor = world.getNeighbor(this, 25);
 		
 		//if there is a neighbor, copy the neighbor's heading and speed
