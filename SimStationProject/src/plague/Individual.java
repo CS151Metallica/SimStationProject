@@ -25,7 +25,8 @@ public class Individual extends Agent{
 	
 	public void infect() {
 		if (!infected) {
-			infected = PlagueSimulation.infect();
+			//whether an Individual gets infected is based on the VIRULENCE in PlagueSimulation
+			infected = Utilities.rng.nextInt(100) < PlagueSimulation.VIRULENCE;
 		}
 	}
 	

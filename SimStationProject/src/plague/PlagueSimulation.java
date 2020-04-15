@@ -9,7 +9,6 @@ package plague;
 import java.awt.*;
 import java.util.*;
 
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import mvc.*;
@@ -50,13 +49,7 @@ public class PlagueSimulation extends Simulation{
 	  
 	  @Override
 	  public void stats() {
-		  JFrame frame = new JFrame("Status");
 		  JOptionPane.showMessageDialog(null, "#agents = " + POPULATION + "\nclock = " + getClock() + "\n% infected = " + percentInfected());
-	  }
-	  
-	  public static boolean infect() {
-		  //whether an Individual gets infected is based on the VIRULENCE
-		  return Utilities.rng.nextInt(100) < VIRULENCE;
 	  }
 	  
 	  public static void main(String[] args) {

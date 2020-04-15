@@ -6,7 +6,6 @@ package prisoners;
 
 import java.util.*;
 
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import mvc.AppFactory;
@@ -20,14 +19,14 @@ public class PrisonerDT extends Simulation{
 	public static int WIN = 5;			//score for the one that only cheated
 	public static int LOSE = 0;			//score for the one that got cheated
 	
-	public static ArrayList<String> STRATEGIES;
+	private ArrayList<String> allStrategies;	//keeps track of all strategy types
 	
 	public PrisonerDT() {
-		STRATEGIES = new ArrayList<String>();
-		STRATEGIES.add("Cooperative");
-		STRATEGIES.add("Selfish");
-		STRATEGIES.add("Random");
-		STRATEGIES.add("Reciprocal");		
+		allStrategies = new ArrayList<String>();
+		allStrategies.add("Cooperative");
+		allStrategies.add("Selfish");
+		allStrategies.add("Random");
+		allStrategies.add("Reciprocal");		
 	}
 	
 	@Override
@@ -57,24 +56,12 @@ public class PrisonerDT extends Simulation{
 		
 	}
 	
-	public static void main(String[] args) {
-		AppFactory factory = new PrisonerDTFactory();
-		AppPanel panel = new SimulationPanel(factory);
-		panel.display();
-	}
-	
 	@Override
 	public void stats()
-	{
-		JFrame frame = new JFrame("Status");
-		
+	{		
 		double[] count = new double[NUM_STRATEGIES];
 		double[] totalScore = new double[NUM_STRATEGIES];
-		String[] average = new String[NUM_STRATEGIES];
-		
-		for(int j = 0; j < NUM_STRATEGIES; j++) {
-			average[j] = "";
-		}
+		ArrayList<String> average = new ArrayList<String>();
 		
 		ArrayList<Agent> agents = getAgents();
 		for (Agent a: agents) {
@@ -96,13 +83,20 @@ public class PrisonerDT extends Simulation{
 			} 
 		}
 		
-		//calculate strategy by dividing the totalScore by count
-		for (int i = 0; i < NUM_STRATEGIES; i++) {
+		//calculate average fitness for each strategy by dividing the totalScore by count
+		for (int i = 0; i < allStrategies.size(); i++) {
 			double temp = totalScore[i] / count[i];
 			
-			average[i] = average[i].replace("", STRATEGIES.get(i) + ": " + temp + "\n");
+			String averageStatement = allStrategies.get(i) + "'s average: " + temp + "\n";
+			average.add(averageStatement);
 		}
 		
-		JOptionPane.showMessageDialog(null, "#agents = " + getAgents().size() + "\nclock = " + getClock() + "\n" + average[0] + average[1] + average[2] + average[3]);
+		JOptionPane.showMessageDialog(null, "#agents = " + getAgents().size() + "\nclock = " + getClock() + "\n" + average.get(0) + average.get(1) + average.get(2) + average.get(3));
+	}
+	
+	public static void main(String[] args) {
+		AppFactory factory = new PrisonerDTFactory();
+		AppPanel panel = new SimulationPanel(factory);
+		panel.display();
 	}
 }
