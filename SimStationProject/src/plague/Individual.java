@@ -20,7 +20,7 @@ public class Individual extends Agent{
 	
 	//determines whether the individual is infected at the beginning
 	private void setInfected() {
-		infected = Utilities.rng.nextInt(50) < 7;
+		infected = Utilities.rng.nextInt(50) < 9;
 	}
 	
 	public void infect() {

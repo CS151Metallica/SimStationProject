@@ -12,7 +12,7 @@ import java.util.*;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-import mvc.Utilities;
+import mvc.*;
 import simstation.*;
 
 public class PlagueSimulation extends Simulation{
@@ -50,13 +50,19 @@ public class PlagueSimulation extends Simulation{
 	  
 	  @Override
 	  public void stats() {
-	  JFrame frame = new JFrame("Status");
-		JOptionPane.showMessageDialog(null, "#agents = " + POPULATION + "\nclock = " + getClock() + "\n% infected = " + percentInfected());
+		  JFrame frame = new JFrame("Status");
+		  JOptionPane.showMessageDialog(null, "#agents = " + POPULATION + "\nclock = " + getClock() + "\n% infected = " + percentInfected());
 	  }
 	  
 	  public static boolean infect() {
 		  //whether an Individual gets infected is based on the VIRULENCE
 		  return Utilities.rng.nextInt(100) < VIRULENCE;
+	  }
+	  
+	  public static void main(String[] args) {
+		  AppFactory factory = new PlagueFactory();
+		  AppPanel panel = new SimulationPanel(factory);
+		  panel.display();
 	  }
 	  
 }

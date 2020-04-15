@@ -17,7 +17,8 @@ public class SimulationPanel extends AppPanel {
 		this.setLayout(new GridLayout(1, 2));
         this.setPreferredSize(new Dimension(600, 600));
 		
-		SimulationView view = new SimulationView((Simulation)model);
+		SimStationFactory simFactory = (SimStationFactory)factory;
+	    View view = simFactory.getView(model);
 		view.setPreferredSize(new Dimension(255,255));		
 		
 		// panel to store all buttons: Leap, Clear
